@@ -14,7 +14,22 @@
     <div class="container">
         <div class="row">
           <h1>  Animals ? </h1>
-          <p>EJS Will render Animals</p>
+          <% if (animals.length > 0) { %>
+           <table class="table table-bordered">
+             <tr>
+               <th>Name</th>
+               <th>Species</th>
+               <th>Color</th>
+             </tr>
+             <% for (var i = 0; i < animals.length; i++) { %>
+               <tr>
+                 <td><%= animals[i].name %></td>
+                 <td><%= animals[i].species %></td>
+                 <td><%= animals[i].color %></td>
+               </tr>
+             <% } %>
+           </table>
+         <% } %>
         </div>
     </div>
 

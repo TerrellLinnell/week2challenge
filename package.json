@@ -5,6 +5,7 @@
   "main": "server.js",
   "author": "",
   "license": "ISC",
+  "scripts": {"nodemon": "nodemon server.js"},
   "dependencies": {
     "body-parser": "^1.14.1",
     "ejs": "^2.5.5",
